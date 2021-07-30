@@ -51,9 +51,9 @@ def mk_output(df,NOW,PRACTICE=True):
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
     if PRACTICE:
-        df.to_csv(f'{OUTPUT_DIR}PRACTICE_{NOW}.csv')
+        df.to_csv(f'{OUTPUT_DIR}PRACTICE_{NOW}.csv',index=False)
     else:
-        df.to_csv(f'{OUTPUT_DIR}{NOW}.csv')
+        df.to_csv(f'{OUTPUT_DIR}{NOW}.csv',index=False)
 
     # return NOW,TMP_DIR
 
