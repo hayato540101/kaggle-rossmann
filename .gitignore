@@ -1,0 +1,15 @@
+*csv
+*pkl
+*gz
+
+work/models/
+work/src/
+
+# others以下
+work/eda/others/*.py
+work/eda/others/*.ipynb
+work/eda/others/*.R
+work/eda/others/*.Rmd
+work/eda/.ipynb_checkpoints/*.ipynb
+
+# others個別
