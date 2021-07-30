@@ -22,10 +22,15 @@ https://www.kaggle.com/c/rossmann-store-sales/overview
 #### 方針
 - pre_baselineここからbaseline作成
     - 時系列クロスバリデーション・複数モデルの重み付き平均まではできたはず
-- 
+- バリデーションの確立
+    - これをやらないと、理由が説明できる特徴量以外はどんなに作っても意味がない
+    - EDAやdiscussionをみる
 
 
 
 
 #### Kernel /10
 <!-- my-15th-solution-features-mainly-using-bigquery -->
+
+#### discussion
+https://www.kaggle.com/c/rossmann-store-sales/discussion/18024
