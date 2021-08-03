@@ -1,7 +1,17 @@
 # いつもの
 import os
 os.listdir('../../')
+%matplotlib inline
+# from matplotlib import style; plt.style.use('ggplot')
+plt.style.use('ggplot') # これだとダークテーマでも目盛りが見える!
+np.set_printoptions(precision=4, threshold=10000, linewidth=100, edgeitems=999, suppress=True)
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', 100)
+pd.set_option('display.width', 100)
+pd.set_option('expand_frame_repr', False)
+pd.set_option('precision', 6)
 
+seed = 0
 
 '''EDA&&基本的な前処理'''
 # 売り上げが0なのにOpenが1(=Openしているのに売り上げが0)なのはさすがにおかしい、実務だと理由がありそうだが、訓練データに関しては「売上0の時は店が開いていない」と置換してもよいはず
@@ -49,8 +59,6 @@ data['day'] = data['day'].astype(float)
 train.query("Sales==1")
 
 
-
-
 '''メモリ対策'''
 # importするやつ
 import sys, os
@@ -74,10 +82,6 @@ train.query("Sales==1")
 https://qiita.com/Kobayashi2019/items/98e74110d74e4c60f617#rreturn
 %debug
 import pdb; pdb.set_trace()
-
-
-
-
 
 '''所感'''
 
