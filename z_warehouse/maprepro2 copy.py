@@ -9,7 +9,10 @@ from pickle import load
 from pickle import dump
 
 def mk_dir():
-    NOW = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+    # JSTとUTCの差分
+    DIFF_JST_FROM_UTC = 9
+    NOW = (datetime.datetime.utcnow() + datetime.timedelta(hours=DIFF_JST_FROM_UTC)).strftime('%Y-%m-%d_%H-%M-%S')
+    # NOW = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
     TMP_DIR = '../models/'+NOW
     if not os.path.exists(TMP_DIR):
         os.makedirs(TMP_DIR)
