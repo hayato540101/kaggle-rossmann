@@ -38,6 +38,9 @@ https://www.kaggle.com/c/rossmann-store-sales/overview
     - week,dayofyear共にスコア改善に寄与、この二つとも「季節性」や「時期」に関する情報を与えられたのかも
     - storeテーブルのPromo2SinceWeek,Promo2SinceYear,PromoIntervalの情報以外を使用,これは今まで使用していなかった情報なのでスコア改善は理解できる
     - バリデーション手法に試行錯誤の余地がある
+- 0804
+    - NaNでOpenが1か0かは曜日以外に特定できなさそう
+![イメージ説明](work\eda\m\png\テストデータかつNaNの行.png)
 
 
 #### Kernel /10
