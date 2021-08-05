@@ -37,17 +37,18 @@ def mk_pred_dict(modeldict, test_x):
     print('予測リストが入った辞書作成終了')
     return pred_dict
 
-def wei_average(pred_dict,test_length):
-    print('複数モデルを使用した重み付き平均予測を開始します')
-    pred_wei_average = np.zeros(shape=(test_length,1))
-    tmp=0
-    for weight, pred in pred_dict.items():
-        tmp+=weight
-        pred_wei_average += weight*pred
-        pred_wei_average /= tmp
-    print('重み付き平均pred_wei_averageがreturnされます')
-    print('重み付き平均pred_wei_averageがreturnされました')
-    return pred_wei_average
+# def wei_average(pred_dict,test_length):
+#     print('複数モデルを使用した重み付き平均予測を開始します')
+#     pred_wei_average = np.zeros(shape=(test_length,1))
+#     tmp=0
+#     for weight, pred in pred_dict.items():
+#         tmp+=weight
+#         print(tmp)
+#         pred_wei_average += weight*pred
+#         pred_wei_average /= tmp
+#     print('重み付き平均pred_wei_averageがreturnされます')
+#     print('重み付き平均pred_wei_averageがreturnされました')
+#     return pred_wei_average
 
 def mk_output(df,NOW,PRACTICE=True):
     OUTPUT_DIR = '../../output/'
@@ -55,8 +56,13 @@ def mk_output(df,NOW,PRACTICE=True):
         os.makedirs(OUTPUT_DIR)
     if PRACTICE:
         df.to_csv(f'{OUTPUT_DIR}PRACTICE_{NOW}.csv',index=False)
+        print('PRACTICE=True')
+        print(f'MADE {OUTPUT_DIR}PRACTICE_{NOW}.csv')
     else:
         df.to_csv(f'{OUTPUT_DIR}{NOW}.csv',index=False)
+        print('PRACTICE=False')
+        print(f'MADE {OUTPUT_DIR}{NOW}.csv')
+        
 
     # return NOW,TMP_DIR
 
