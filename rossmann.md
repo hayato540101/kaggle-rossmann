@@ -7,8 +7,6 @@ https://www.kaggle.com/c/rossmann-store-sales/overview
 - サイズ
 - 指標：RMSPE
 
-
-
 #### Score
 
 |       提出ファイル       |       詳細       |       Private Leaderboard       |
@@ -27,7 +25,6 @@ https://www.kaggle.com/c/rossmann-store-sales/overview
 |  csv  |  make | 0 |
 |  csv  |  make | 0 |
 
-
 #### 方針
 - pre_baselineここからbaseline作成
     - 時系列クロスバリデーション・複数モデルの重み付き平均まではできたはず
@@ -42,6 +39,13 @@ https://www.kaggle.com/c/rossmann-store-sales/overview
 - 0804
     - NaNでOpenが1か0かは曜日以外に特定できなさそう
 ![イメージ説明](work\eda\m\png\テストデータかつNaNの行.png)
+
+- 0805
+    - 残りの処理
+![イメージ説明](work/eda/m/png/残りの処理.png)
+
+
+
 
 
 #### Kernel /10

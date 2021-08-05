@@ -2,6 +2,7 @@
 *pkl
 *gz
 
+.vscode/
 work/models/
 work/src/
 
