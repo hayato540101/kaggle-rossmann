@@ -54,7 +54,7 @@ https://www.kaggle.com/c/rossmann-store-sales/overview
 
 
 #### Kernel /10
-<!-- my-15th-solution-features-mainly-using-bigquery -->
+my-15th-solution-features-mainly-using-bigquery
 
 #### discussion
 https://www.kaggle.com/c/rossmann-store-sales/discussion/18024
